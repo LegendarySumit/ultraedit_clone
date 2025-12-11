@@ -1,17 +1,10 @@
-// Hamburger menu functionality
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const navLinks = document.getElementById('navLinks');
-
-if (hamburgerBtn && navLinks) {
-    hamburgerBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-    });
-
-    // Optional: Close menu when a link is clicked (for better UX)
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('open');
-        });
+// Scroll to downloads section on download button click
+const scrollToDownloadsBtn = document.getElementById('scrollToDownloads');
+const downloadsSection = document.getElementById('downloads');
+if (scrollToDownloadsBtn && downloadsSection) {
+    scrollToDownloadsBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        downloadsSection.scrollIntoView({ behavior: 'smooth' });
     });
 }
 // Scroll to Top Button Functionality
