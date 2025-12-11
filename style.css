@@ -1,3 +1,33 @@
+/* Button hover effects for better UX */
+.download-button:hover,
+.dd-btn:hover,
+.subscribe-btn:hover,
+.new-button:hover {
+    background-color: #0077b6;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(20,165,255,0.12);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+/* Form input focus for clarity */
+.new-form input:focus,
+input[type="email"]:focus {
+    outline: 2px solid #14a5ff;
+    border-color: #14a5ff;
+    background: #f5fbff;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus,
+.dd-btn:focus,
+.download-button:focus,
+.subscribe-btn:focus,
+.new-button:focus {
+    outline: 2px solid #0077b6;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #90e0ef;
+}
 /* Professional credit bar styling */
 .credit-bar {
     width: 100%;
