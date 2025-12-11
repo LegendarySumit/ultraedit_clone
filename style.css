@@ -1,3 +1,64 @@
+/* Language dropdown styles */
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.lang-dropdown button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px 8px 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.lang-dropdown button:focus {
+    outline: 2px solid #14a5ff;
+}
+.lang-list {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    min-width: 120px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.lang-list li {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #222;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s;
+}
+.lang-list li:last-child {
+    border-bottom: none;
+}
+.lang-list li:hover, .lang-list li[aria-selected="true"] {
+    background: #f5f7fa;
+}
+.lang-dropdown.open .lang-list {
+    display: block;
+}
+
+/* Newsletter message */
+.newsletter-msg {
+    margin-top: 10px;
+    color: #14a5ff;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
 /* Button hover effects for better UX */
 .download-button:hover,
 .dd-btn:hover,
@@ -119,10 +180,24 @@ button:focus,
     margin-left: 8px;
 }
 
+/* Remove default outline/box on nav links hover/focus */
 .nav-links a {
     text-decoration: none;
     color: rgb(67, 67, 67);
     cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    border-radius: 0;
+    padding: 4px 8px;
+    transition: color 0.2s;
+}
+.nav-links a:focus,
+.nav-links a:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    background: none;
+    color: #14a5ff;
 }
 
 .main-part {

@@ -40,7 +40,18 @@
 
             <div class="right-section">
                 <p class="impobox">BUY NOW</p>
-                <p class="langbox"><i class="fa-solid fa-earth-americas"></i> English</p>
+                <div class="langbox lang-dropdown">
+                    <button id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+                        <i class="fa-solid fa-earth-americas"></i> <span id="selectedLang">English</span> <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <ul id="langList" class="lang-list" tabindex="-1" role="listbox" aria-label="Select language">
+                        <li data-lang="en" role="option" aria-selected="true">English</li>
+                        <li data-lang="hi" role="option">Hindi</li>
+                        <li data-lang="es" role="option">Spanish</li>
+                        <li data-lang="fr" role="option">French</li>
+                        <li data-lang="de" role="option">German</li>
+                    </ul>
+                </div>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
@@ -159,9 +170,10 @@
                     <form class="new-form">
                         <label class="for-email" for="Email">Enter email address :</label>
                         <div>
-                            <input type="email" name="myEmail" id="Email">
+                            <input type="email" name="myEmail" id="Email" required>
                         </div>
                         <button type="submit" class="new-button">SIGN UP</button>
+                        <div id="newsletterMsg" class="newsletter-msg" style="display:none;"></div>
                     </form>
             </div>
 
