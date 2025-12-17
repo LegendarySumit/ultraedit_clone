@@ -1,24 +1,55 @@
-UltraEdit Clone 💻
+# 💻 UltraEdit Homepage Clone
 
-This is a clone of the UltraEdit homepage built using HTML and CSS only.
+This project is a frontend clone of the UltraEdit homepage, built using pure HTML and CSS.
+The focus is on layout accuracy, responsiveness, and clean structuring, without relying on JavaScript.
 
-📌 What I Practiced:
+🌐 Live Demo
 
-CSS Grid layout structuring
-Responsive page sections
-Header, Hero section, Footer
-Organized content blocks without JavaScript
+> 🔗 Live Site:
+https://legendarysumit.github.io/ultraedit_clone/
 
-🚀 Live Site: https://legendarysumit.github.io/ultraedit_clone/
+## 📌 Key Improvements
 
-🛠 Tech Stack:
+🌍 Enhanced Language Selection Section
+Improved layout and visual clarity for the language button area to better reflect real-world UI practices.
 
-HTML5
+📐 Structured Page Layout
+Clear separation of header, hero section, content blocks, and footer.
 
-CSS3 (with Grid & Flexbox)
+📱 Responsive Design
+Page adapts smoothly across mobile, tablet, and desktop screen sizes.
 
-📚 What I Learned:
+🧪 What I Practiced
 
-Real use-case of CSS Grid
-Better structure planning
-Responsive layout ideas
+- CSS Grid for layout structuring
+
+- Flexbox for alignment and spacing
+
+- Responsive section planning
+Organizing content without JavaScript
+
+🛠 Tech Stack
+
+- HTML5
+
+CSS3
+
+- CSS Grid
+
+- Flexbox
+
+- Media Queries
+
+## 📚 What I Learned
+
+- Practical, real-world use of CSS Grid
+
+- Improved layout planning before writing code
+
+- Building responsive interfaces without JavaScript
+
+- Structuring a production-style homepage using only HTML and CSS
+
+## 📝 Notes
+
+This project intentionally avoids JavaScript to strengthen core frontend fundamentals and layout thinking before moving on to interactive or framework-based implementations.
